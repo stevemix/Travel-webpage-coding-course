@@ -1,0 +1,41 @@
+<!DOCTYPE HTML>
+<html>
+<head>
+<title>Javascript Lesson</title>
+</head>
+<body>
+<h1>JavaScript Lesson</h1>
+<h2>JavaScript is NOT Java</h2>
+<p> JavaScript variables are containers for storing data values</p>
+
+<p id="demo"></P>
+<p id="todayDate"></p>
+
+
+<label>Name:</label>
+<input type="text" id="fname" />
+<p id="changeText"></p>
+<input type="button" value="change" onclick="replaceText();" />
+
+
+<script>
+var x= 5;
+var y= 6;
+var z= x + y;
+
+var myName= document.getElementById("fname").value;
+
+const d= new Date();
+
+document.getElementById("demo").innerHTML =z;
+
+document.getElementById("todayDate").innerHTML =d;
+
+function replaceText(){
+			var myName = document.getElementById("fname").value;
+            document.getElementById("changeText").innerHTML = myName;
+}
+
+</script>
+</body>
+</html>

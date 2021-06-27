@@ -1,0 +1,76 @@
+<!DOCTYPE Html>
+<html>
+<head>
+<title><Skyway's OrderForm></title>
+<style>
+#banner{
+   padding:5px;
+   border: solid black; 
+   background-color:#09FAF3;
+}
+#bannerWords{
+                position: absolute;
+                left:520px;
+                top:40px;
+                font-size: 35px;
+                color: Black;
+}
+<body{
+    font-family:comic sans;
+}
+#welcomeMsg{
+margin:10px;
+}
+</style>
+</head>
+<body style="font-family:comic sans;background-color:#07B3AE">>
+<div width=50% Id="banner"><img src="airplanevector.jpeg">
+<div id="bannerWords"><h1 style="font-family:comic sans;">Skyway's Travel Shop</h1></Div>
+</div>
+<div><a href="skywayTravel.html">home</a></div>
+<div id="welcomeMsg"><h2>Book Your Travel Here:</h2></div>
+<p id="custStatus">New Customer</p>
+
+<form>
+<ul>
+<li><input type="checkbox" id="chk_lonPar">London to Paris</input></li>
+<li><input type="checkbox" id="chk_lonRom">London to Rome</input></li>
+<li><input type="checkbox" id="chk_lonNew">London to New York</input></li>
+</ul>
+
+<label>Depart</label>
+<input type="text" id="Dep" value="Time/Day/Month/Year"></input>
+<label>Return</label>
+<input type="text" id="Ret" value="Time/Day/Month/Year"></input><br /></br>
+
+
+<label>Adult</label>
+<input type="text" id="Adult" value="0"></input>
+<label>Child</label>
+<input type="text" id="Child" value="0"></input><br /></br>
+
+
+<input type="checkbox" id="chk_sing">Single</input>
+<input type="checkbox" id="chk_ret">Return</input><br /></br>
+
+<label>First Name</label>
+<input type="text" id="fname" value="">
+<label>Surname</label>
+<input type="text" id="Sname" value=""></input></input><br /></br>
+<label>Password</label>
+<input type="password" id="pwd"></input><br /></br>
+
+<input type="submit"></input>
+<input type="button" value="Cancel" onclick="alert('Your booking has now been cancelled')"></input>
+<input type="button" value="Edit" onclick="funcCustStatus()"></imput>
+</form>
+<script>
+function funcCustStatus(){
+    document.getElementById("custStatus").innerHTML = "Returning Customer";
+}
+</script>
+
+
+</body>
+</html>
+

@@ -1,0 +1,37 @@
+<!DOCTYPE HTML>
+<html>
+<head>
+<title>Javascript Lesson</title>
+</head>
+<body>
+<h1>JavaScript Lesson</h1>
+<h2>JavaScript is NOT Java</h2>
+<p> JavaScript variables are containers for storing data values</p>
+
+<p id="demo"></P>
+<p id="todayDate"></p>
+
+
+
+<script>
+var x= 5;
+var y= 6;
+var z= x + y;
+
+var myName=document.getElementById("text").value;
+
+const d= new Date();
+
+document.getElementById("demo").innerHTML =z;
+
+document.getElementById("todayDate").innerHTML =d;
+function addList(){
+var node=document.createElement("li");
+var text=document.createTextNode("student");
+
+node.appendChild(text);
+document.getElementById("myList").appendChild(node);
+}
+</script>
+</body>
+</html>

@@ -1,0 +1,169 @@
+!DOCTYPE html
+<html lang="en">
+<head>
+
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <meta name="description" content="">
+    <meta name="author" content="">
+    <link rel="icon" href="/docs/4.0/assets/img/favicons/favicon.ico">
+
+    <title>Travel Booking Form </title>
+
+    <link rel="canonical" href="https://getbootstrap.com/docs/4.0/examples/jumbotron/">
+
+    <!-- Bootstrap core CSS -->
+    <link href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" rel="stylesheet">
+
+    <!-- Custom styles for this template -->
+    <link href="jumbotron.css" rel="stylesheet">
+    <style>
+    #Blueg{
+background-color:#07B3AE;
+    }
+    </style>
+  </head>
+
+  <body>
+
+    <nav class="navbar navbar-expand-md navbar-dark fixed-top" id="Blueg">
+      <a class="navbar-brand" href="#">Skyway Travel</a>
+     <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarsExampleDefault" aria-controls="navbarsExampleDefault" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+
+      <div class="collapse navbar-collapse" id="navbarsExampleDefault">
+        <ul class="navbar-nav mr-auto">
+          <li class="nav-item active">
+            <a class="nav-link" href="bootstrapSkywayTravelIndex.html">Home <span class="sr-only">(current)</span></a>
+         </li>
+          <li class="nav-item">
+            <a class="nav-link" href="bootstrapSkywayAboutUs.html">About Us</a>
+         </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#">Booking Form</a>
+         </li>
+          <!-- The below menu iten is </ dsabled link-->
+          <!--<li class="nav-item">
+            <</ cass="nav-link disabled" href="#">Disabled</</>
+         </li> -->
+      
+            </div>
+          </li>
+        </ul>
+        <form class="form-inline my-2 my-lg-0">
+          <input class="form-control mr-sm-2" type="text" placeholder="Search" aria-label="Search">
+          <button class="btn btn-outline-success my-2 my-sm-0" type="submit">Search</button>
+        </form>
+      </div>
+    </nav>
+
+    <main role="main">
+
+      <!-- Main jumbotron for a primary marketing message or call to action -->
+      <div class="jumbotron">
+        <div class="container" style="font-family:comic sans;background-image: url(aircraftCommercialFlight.jpeg);background-size:cover; >
+<img src=airplanevector.jpeg">
+          <h1 class="display-3">Welcome To Skyway Travel</h1>
+          <h2 class="display-6">Booking Form</h2>
+        </div>
+      
+    <div class="container">
+
+  <p>Please Complete The Following Details</p>
+
+  <form action="/action_page.php">
+    <div class="form-group">
+      <label for="fName">First Name:</label>
+      <input type="text" class="form-control" id="fName" name="username">
+    </div>
+
+     <div class="form-group">
+      <label for="fName">Last Name:</label>
+      <input type="text" class="form-control" id="sName" name="username">
+    </div>
+
+    <div class="form-group">
+      <label for="pwd">Password:</label>
+      <input type="password" class="form-control" id="pwd" name="password">
+    </div>
+
+<div class="form-group">
+<label for="dte">Pick Date:</label>
+<input type="date" class="form-control" id="dte" />
+</div>
+
+<div class="form-group">
+      <label for="sel1">Destination (select one):</label>
+      <select class="form-control" id="selDest" name="sellist1">
+        <option>Paris</option>
+        <option>Rome</option>
+        <option>New York</option>
+      </select>
+      </div>
+</form>
+<p><a class="btn btn-outline-success
+btn-lg" href="#" role="button" style="margin:5px;"onclick="confBook();">Book Now></a><a class="btn btn-outline-success
+btn-lg" href="#" role="button" onclick="alert('You have cancelled your booking!');">Cancel</a><p>
+
+
+</div>
+</div>
+
+<div>
+<script>
+function confBook(){
+    var nameOfUser= document.getElementById("fName").value;
+     var surnameOfUser= document.getElementById("sName").value;
+      var dateOfTravel= document.getElementById("dte").value;
+       var dest= document.getElementById("selDest").value;
+    
+    
+    document.getElementById("yourBooking").
+    innerHTML= "The booking is for "+ nameOfUser;
+
+}
+</script>
+
+
+<div class="container">
+        <!-- Example row of columns -->
+        <div class="row">
+          <div class="col-md-4">
+            <h2></h2>
+            <p id="yourBooking"></p>
+          </div>
+          <div class="col-md-4">
+            <h2>Your Booking Confirmation:</h2>
+            <p></p>
+            
+          </div>
+          <div class="col-md-2">
+            <h2></h2>
+            <p></p>
+          
+          </div>
+        </div>
+
+        <hr>
+
+      </div> <!-- /container -->
+
+    </main>
+
+    <footer class="container">
+      <p>© Skyway Travel 2021</p>
+    </footer>
+
+    <!-- Bootstrap core JavaScript
+    ================================================== -->
+    <!-- Placed at the end of the document so the pages load faster -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script>window.jQuery || document.write('<script src="../../assets/js/vendor/jquery-slim.min.js"><\/script>')</script>
+   <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+  
+
+</body>
+
+</html>
